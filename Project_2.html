@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Login Page</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .page1 {
+        height: 100vh;
+        background-color: rgb(255, 153, 0);
+      }
+      main {
+        height: 100%;
+        display: flex;
+      }
+      .left {
+        width: 60%;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .left h1 {
+        font-size: 45px;
+      }
+      .left p {
+        color: rgb(136, 136, 136);
+      }
+      nav {
+        display: flex;
+        gap: 15px;
+      }
+      .or {
+        text-align: center;
+        font-size: 10px;
+        margin: 10px;
+        color: rgb(170, 170, 170);
+      }
+      input {
+        width: 450px;
+        padding: 15px;
+        border-radius: 25px;
+        border: none;
+        background: rgb(218, 226, 225);
+        margin-bottom: 15px;
+        outline: none;
+      }
+      .signin-btn {
+        width: 200px;
+        padding: 15px;
+        border-radius: 25px;
+        border: none;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        margin-top: 10px;
+        background-color: rgb(19, 158, 137);
+      }
+      .right {
+        width: 40%;
+        background-image: linear-gradient(
+          to right,
+          rgb(0, 182, 106),
+          rgb(13, 194, 155)
+        );
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .right h2 {
+        font-size: 35px;
+        font-weight: bold;
+      }
+      .right p {
+        color: white;
+        font-size: 20px;
+        line-height: 1.6;
+      }
+      .signup-btn {
+        width: 200px;
+        padding: 15px;
+        border-radius: 25px;
+        border: none;
+        font-size: 16px;
+        background-color: white;
+        cursor: pointer;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page1">
+      <main>
+        <div class="left">
+          <h1>Login to Your Account</h1>
+          <br />
+          <p>Login using social networks</p>
+          <br />
+          <nav>
+            <a href="" style="color: rgb(28, 28, 255)"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="" style="color: rgb(255, 91, 91)"
+              ><i class="fa-brands fa-google-plus-g"></i
+            ></a>
+            <a href="" style="color: rgb(45, 129, 255)"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+          </nav>
+          <div class="or">OR</div>
+
+          <input type="email" placeholder="Email" />
+          <input type="password" placeholder="Password" />
+          <button class="signin-btn">Sign In</button>
+        </div>
+        <div class="right">
+          <h2>New Here?</h2>
+          <br />
+          <p>Signup and discover a great <br />amount of new opportunities!</p>
+
+          <button class="signup-btn">Sign Up</button>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
